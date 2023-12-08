@@ -10,3 +10,6 @@ tmp/
 
 # Ignore the README.org file
 README.org
+capstone_project/scratch
+capstone_project/program.prof
+capstone_project/OUTPUTS/GO/registration_form.go
