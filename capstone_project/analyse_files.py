@@ -3,6 +3,9 @@ from brain_module import ChatGPT
 from cost_calculator import CostCalculator
 
 class AnalyseFiles:
+    """
+    This class represents what will be the ChatGPT base user message.
+    """
     bot = ChatGPT()
     cost_calc = CostCalculator()
     def __init__(self):
@@ -10,6 +13,15 @@ class AnalyseFiles:
 
     @staticmethod
     def analyze_source_file(code_str:str):
+        """
+        This method will resquest to ChatGPT the base user message, including the code to analyse.
+        
+        Args: 
+            code_str (string): Content of the script to analyse
+
+        Returns:
+            str: Content of the message response
+        """
         message = f"""
         I will give you a python dict with {{"name_of_file": "source_code"}}
         take source_code then transform the syntax to the other programming language (python from GO lang or viceversa)

@@ -13,7 +13,7 @@ class ChatGPT:
 
         # Retrieve the OPENAI_API_KEY environment variable
         # self.api_key = os.getenv("OPENAI_API_KEY")
-        self.api_key = "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"
+        self.api_key = "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"
 
         # Set the retrieved API key for the OpenAI library
         openai.api_key = self.api_key
